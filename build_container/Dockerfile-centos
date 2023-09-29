@@ -1,6 +1,6 @@
 #Add qemu function for supporting multiarch
 ARG IMAGEARCH
-FROM alpine:3.9.2 as qemu
+FROM alpine:3.18.3 as qemu
 RUN apk add --no-cache curl
 ARG QEMUVERSION=4.0.0
 ARG QEMUARCH
